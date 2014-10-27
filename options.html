@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>hish: Vinh's hack day 1</title>
+		<link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/options.css" rel="stylesheet">
+		<script src="libs/jquery/jquery.min.js"></script>
+		<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="fixed-top">
+			<header>
+				<img id="logo-icon" src="img/icon_48.png" alt="hish">
+				<h1 class="top-title">
+				<amr>hish: Vinh's hack day 2</amr>
+				</h1>
+			</header>
+		</div><br>
+		<div class="options-sections">
+			<section>
+				<h3><amr>Manage Blacklisted Sites</amr></h3>
+		    	<div id="table_holder">
+					<table class="table" id="black_list_table">
+						<thead>
+							<tr>
+								<th>Blacklisted Sites <span style="font-weight:normal;font-size:12px;">(disables hish on these sites)</span></th>
+								<th class="delete_button_holder">
+									<button type="button" class="btn btn-success" id="add_blacklist_site">add</button>
+									<button type="button" class="btn btn-warning" id="cancel_blacklist_site" style="display:none;">cancel</button>
+								</th>
+							</tr>
+						</thead>
+						<tbody id="blacklist_table_body"> </tbody>
+			        </table>
+		    	</div>
+		    </section>
+  		</div>
+	</body>
+	<script src="js/options.js"></script>
+</html>

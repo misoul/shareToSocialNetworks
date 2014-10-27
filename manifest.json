@@ -1,0 +1,30 @@
+{
+   "background": {
+      "scripts": [ "js/background.js" ]
+   },
+   "content_scripts": [ {
+      "all_frames": false,
+      "css": [ "libs/hishjs/font-awesome.css" ],
+      "js": [ "libs/jquery/jquery.min.js", "libs/hishjs/hish.js", "js/contentscript_global.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_idle"
+   }, {
+      "all_frames": false,
+      "js": [ "js/contentscript_sharer.js" ],
+      "matches": [ "https://www.facebook.com/sharer/*" ],
+      "run_at": "document_idle"
+   } ],
+   "description": "Vinh's hackday 0",
+   "icons": {
+      "128": "img/icon_128.png",
+      "19": "img/icon_19.png",
+      "48": "img/icon_48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiOf4zjPDTcUcfKEVs/arLlzIQNvYwyQkfkQ/n2BSiyqcZvZHnf6rPBh5muPJNMgHztviDqjOmxIeKBvXSa33Ry2+PswxgH4e+TbvERjQX00UUVlKGUB6Jp+BU2wTMexhR/G/LVbOy7V/doimnvu0qY6ifm8okHvf/pCWOYTTz47TMsOzdT2yg8ooNW56VFSs1t573rsDdSnB3+YKSI3nK03ib6Uy6aF6feWeOa7VTN4TQwXG/dK36mJqjDou+iJMszqnJd9xTbyw+fJrg8Sa/oR+NDShKcue1CXdT8Y8hFE+Tx5x1evnd27ikbq5F562sKSk3gX+DW8bLGR8QWrrKwIDAQAB",
+   "manifest_version": 2,
+   "name": "hish: Highlight-and-Share",
+   "options_page": "options.html",
+   "short_name": "hish",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.7"
+}
